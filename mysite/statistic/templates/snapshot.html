@@ -1,0 +1,56 @@
+<html>
+<center>
+<head><h2>statistic_snapshot</h2></head>
+<body>
+<style>
+td{width:200px; overflow:hidden}
+</style>
+<table width="4000" border="1">
+<tr>
+<td clsss="td" align=center><b>ID</b></td>
+<td class="td" align=center><b>linkerid</b></td>
+<td class="td" align=center><b>delay</b></td>
+<td class="td" align=center><b>sendspeed</b></td>
+<td class="td" align=center><b>recvspeed</b></td>
+<td class="td" align=center><b>sendflow</b></td>
+<td class="td" align=center><b>recvflow</b></td>
+<td class="td" align=center><b>sendpackets</b></td>
+<td class="td" align=center><b>sevrecv</b></td>
+<td class="td" align=center><b>recvpackets</b></td>
+<td class="td" align=center><b>sevsend</b></td>
+<td class="td" align=center><b>totalsendflow</b></td>
+<td class="td" align=center><b>totalrecvflow</b></td>
+<td class="td" align=center><b>totalsendpackets</b></td>
+<td class="td" align=center><b>totalrecvpackets</b></td>
+<td class="td" align=center><b>perfspeed</b></td>
+<td class="td" align=center><b>perfjiter</b></td>
+<td class="td" align=center><b>perflr</b></td>
+<td width="200" align=center><b>Time</b></td>
+</tr>
+{% for snapshot in snapshots %}
+<tr>
+<td align=center><p>{{ snapshot.id }}</p></td>
+<td align=center><p>{{ snapshot.linkerid }}</p></td>
+<td align=center><p>{{ snapshot.delay }}</p></td>
+<td align=center><p>{{ snapshot.sendspeed }}</p></td>
+<td align=center><p>{{ snapshot.recvspeed }}</p></td>
+<td align=center><p>{{ snapshot.sendflow }}</p></td>
+<td align=center><p>{{ snapshot.recvflow }}</p></td>
+<td align=center><p>{{ snapshot.sendpackets }}</p></td>
+<td align=center><p>{{ snapshot.sevrecv }}</p></td>
+<td align=center><p>{{ snapshot.recvpackets }}</p></td>
+<td align=center><p>{{ snapshot.sevsend }}</p></td>
+<td align=center><p>{{ snapshot.totalsendflow }}</p></td>
+<td align=center><p>{{ snapshot.totalrecvflow }}</p></td>
+<td align=center><p>{{ snapshot.totalsendpackets }}</p></td>
+<td align=center><p>{{ snapshot.totalrecvpackets }}</p></td>
+<td align=center><p>{{ snapshot.perfspeed }}</p></td>
+<td align=center><p>{{ snapshot.perfjiter }}</p></td>
+<td align=center><p>{{ snapshot.perflr }}</p></td>
+<td align=center><p>{{ snapshot.time }}</p></td>
+</tr>
+{% endfor %}
+</table>
+<body>
+</center>
+</html>

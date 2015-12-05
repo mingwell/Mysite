@@ -1,0 +1,19 @@
+<head><center><h2>statistic_event</center></h2></head>
+<body align="center">
+  <div width="500"><center>
+  <table border="1">
+  <tr>
+    <td align=center><b>ID</b></td>
+    <td align=center><b>Event</b></td>
+    <td align=center><b>Time</b></td>
+  </tr>
+{% for event in events %}
+  <tr>
+  <td><p>{{ event.id }}</p></td>
+  <td><p>{{ event.event}}</p></td>
+  <td><p>{{ event.time}}</p></td>
+  </tr>
+{% endfor %}
+  </table>
+  </center></div>
+</body>

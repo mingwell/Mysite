@@ -1,0 +1,1 @@
+django 安装包放在python目录下  ubuntu在/usr/local/lib/python2.7/dist-packagets/django
